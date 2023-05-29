@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>BATTLE ELEMENTS v.1.0</title>
+
+    <script src="./js/mokepon.js"></script>
+    <link rel="stylesheet" href="./stlyles.css"> <!-- llamado a la caracteristica CSS -->
+</head>
+
+<body>
+    <!-- ORIGINAL <h1>🔥 💧 🌎 BATTLE ELEMENTS 🔥 💧 🌎</h1>  y con CCS da caracteristicas a todos los h1 -->
+    <!-- <h1 class="classtitlecss">🔥 💧 🌎 BATTLE ELEMENTS 🔥 💧 🌎</h1>  se agrega class para manejo en css y da caracteristica a title-->
+    <!-- <h1 id="idtitlecss">🔥 💧 🌎 BATTLE ELEMENTS 🔥 💧 🌎</h1> se agrega el id para manejo en css y da caracteristica a title-->
+
+    <section id="choice_pet">
+        <h1 class="classh1title">PET BATTLE</h1>
+
+        <h2 class="classh2subtitle">Choice Your PET:</h2>
+
+        <div class="classdivchoicepet">
+
+            <input type="radio" name="pets" id="dog" title="DOG EVIL" />
+            <label class="classlabelchoicepet" for="dog">
+                <p class="classptitlepets">DOG EVIL</p>
+                <img src="./assets/dog_pet.png" alt="" class="classimgpet">
+            </label>
+
+            <input type="radio" name="pets" id="cat" title="CAT WIZARD" />
+            <label class="classlabelchoicepet" for="cat">
+                <p class="classptitlepets">CAT WIZARD</p>
+                <img src="./assets/cat_pet.png" alt="" class="classimgpet">
+            </label>
+
+            <input type="radio" name="pets" id="mouse" title="MOUSE SUPER" />
+            <label class="classlabelchoicepet" for="mouse">
+                <p class="classptitlepets">MOUSE SUPER</p>
+                <img src="./assets/mouse_pet.png" alt="" class="classimgpet">
+            </label>
+        </div>
+
+        <br>
+        <button id="button_pet" class="classbuttonpet">
+            <p>Start Game</p>
+        </button>
+
+    </section>
+
+    <section id="choice_attack">
+        <h1 class="classh1title">PET BATTLE</h1>
+
+        <div class="classdivchoicepetattack">
+            <label class="classlabelchoiceattack">
+                <p>LIVES YOUR PET -> &nbsp;<span id="namepetgamer"></span></p>
+                <p><span id="livesGamer"></span>&nbsp;&nbsp;</p>
+                <img id="imagegamer" src="" alt="">
+                <!--                <img src="./assets/dog_pet.png" alt="" class="classimgpetattack">-->
+
+            </label>
+
+            <section id="messagesattack">
+                <p id="idattackgamer"></p>
+            </section>
+        </div>
+
+        <div class="classdivchoicepetattack">
+            <label class="classlabelchoiceattack">
+                <p>LIVES ENEMY PET ->&nbsp;</p>
+                <p> <span id="livesEnemy"></span>&nbsp;&nbsp;</p>
+                <!--                <img src="./assets/cat_pet.png" alt="" class="classimgpetattack">-->
+                <img id="imageenemy" src="" alt="">
+            </label>
+
+            <section id="messagesattack">
+                <p id="idattackenemy"></p>
+            </section>
+        </div>
+
+        <!--  INICIO GRID 
+        <div class="ataques">
+            <div class="ataques-jugador">
+                <p id="vidas-jugador">3</p>
+                <p id="mascota-jugador"></p>
+                <div id="ataques-del-jugador"></div>
+            </div>
+
+            <div class="ataques-enemigo">
+                <p id="vidas-enemigo">3</p>
+                <p id="mascota-enemigo"></p>
+                <div id="ataques-del-enemigo"></div>
+            </div>
+        </div>-->
+
+
+        <!--  FINAL GRID GRID -->
+
+        <h2 class="classh2subtitleattack">Choice Your Attack:</h2>
+
+        <div class="classdivchoicepeth2attack">
+
+            <button id="button_fire" name="attacks" class="buttonattack" title="FIRE">Fire 🔥</button>
+            <button id="button_aqua" name="attacks" class="buttonattack" title="AQUA">Aqua 💧</button>
+            <button id="button_terra" name="attacks" class="buttonattack" title="TERRA">Terra 🌎</button>
+        </div>
+
+        <div class="divmessages">
+
+            <section id="Messages">
+                <p id="idresult">Good Luck !!!</p>
+            </section>
+
+            <div>
+                <section id="buttonResetGame">
+                    <button class="classbuttonResetGame">Reset Game</button>
+                </section>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>BATTLE ELEMENTS v.1.0</title>
+
+    <link rel="stylesheet" href="./stlyles.css"> <!-- llamado a la caracteristica CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- para que funcione en como se veria en diferentes dispositivos -->
+</head>
+
+<body>
+    <!-- ORIGINAL <h1>🔥 💧 🌎 BATTLE ELEMENTS 🔥 💧 🌎</h1>  y con CCS da caracteristicas a todos los h1 -->
+    <!-- <h1 class="classtitlecss">🔥 💧 🌎 BATTLE ELEMENTS 🔥 💧 🌎</h1>  se agrega class para manejo en css y da caracteristica a title-->
+    <!-- <h1 id="idtitlecss">🔥 💧 🌎 BATTLE ELEMENTS 🔥 💧 🌎</h1> se agrega el id para manejo en css y da caracteristica a title-->
+
+    <section id="choice_pet">
+        <h1 class="classh1title">PET BATTLE</h1>
+
+        <h2 class="classh2subtitle">Choice Your PET:</h2>
+
+        <div id="contentCards" class="classdivchoicepet">
+            <!-- Esta parte viene definida en el js-->
+
+        </div>
+
+        <br>
+        <button id="button_pet" class="classbuttonpet">
+            <p>Start Game</p>
+        </button>
+
+    </section>
+
+    <section id="watchMap">
+        <h1 class="classh2title">WALK THE MAP WITH YOUR PET</h1>
+        <canvas id="map"></canvas>
+        <div>
+        <button onmouseup="stopPetMove()" 
+                onmousedown="movePetUp()"
+                ontouchend="stopPetMove()"  
+                ontouchstart="movePetUp()"> <img src="./assets/arrow up.png"> </button></div>
+
+        <div>
+            <!-- ontouch eventos para el celular -->
+            <!-- onmouse eventos para el mouse -->
+            <button onmouseup="stopPetMove()" 
+                    onmousedown="movePetLeft()"
+                    ontouchend="stopPetMove()" 
+                    ontouchstart="movePetLeft()"> <img src="./assets/arrow left.png"></button>
+
+            <button onmouseup="stopPetMove()" 
+                    onmousedown="movePetRight()"
+                    ontouchend="stopPetMove()" 
+                    ontouchstart="movePetRight()"><img src="./assets/arrow right.png"></button>            
+        </div>
+        <button onmouseup="stopPetMove()" 
+                onmousedown="movePetDown()"
+                ontouchend="stopPetMove()" 
+                ontouchstart="movePetDown()"> <img src="./assets/arrow down.png"> </button>
+
+        <h2> MOVE YOUR DIRECTION KEYS TO FIGHT THE ENEMY</h2>
+
+    </section>
+
+    <section id="choice_attack">
+        <h1 class="classh1title">PET BATTLE</h1>
+
+        <div class="classdivchoicepetattack">
+            <label class="classlabelchoiceattack">
+                <!--            <p>LIVES YOUR PET &nbsp;<span id="namepetgamer"></span></p>
+                <p><span id="livesGamer"></span>&nbsp;&nbsp;</p> -->
+                <p><span id="namepetgamer"></span>&nbsp</p>
+                <img id="imagegamer" src="" alt="">
+
+            </label>
+
+            <section id="messagesattack">
+                <p id="idattackgamer"></p>
+            </section>
+        </div>
+
+        <div class="classdivchoicepetattack">
+            <label class="classlabelchoiceattack">
+                <!--                <p>LIVES ENEMY PET &nbsp;<span id="namepetenemy"></span></p>
+                <p> <span id="livesEnemy"></span>&nbsp;&nbsp;</p> -->
+                <p><span id="namepetenemy"></span>&nbsp</p>
+                <img id="imageenemy" src="" alt="">
+            </label>
+
+            <section id="messagesattack">
+                <p id="idattackenemy"></p>
+            </section>
+        </div>
+
+
+        <h2 class="classh2subtitleattack">Choice Your Attack:</h2>
+
+
+        <div id="contentAttacksGamer" class="classdivchoicepeth2attackgamer">
+
+        </div>
+
+        <h2 class="classh2subtitleattack">Enemy's Attack:</h2>
+
+        <div id="contentAttacksEnemy" class="classdivchoicepeth2attackenemy">
+
+        </div>
+
+        <div class="divmessages">
+
+            <section id="Messages">
+                <p id="idresult"> Push Button to Attack </p>
+            </section>
+
+            <div>
+                <section id="buttonResetGame">
+                    <button class="classbuttonResetGame">Reset Game</button>
+                </section>
+            </div>
+        </div>
+    </section>
+    <script src="./js/mokepon.js"></script>
+</body>
+
+</html>
